@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import './models/category.dart';
 
 class CategoryItem extends StatelessWidget {
   final String title;
@@ -11,7 +10,11 @@ class CategoryItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(15),
-      child: Text(title),
+      child: Text(
+        title,
+        // ignore: deprecated_member_use
+        style: Theme.of(context).textTheme.title,
+      ),
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
