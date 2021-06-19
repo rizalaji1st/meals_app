@@ -23,12 +23,15 @@ class MealItem extends StatelessWidget {
     switch (complexity) {
       case Complexity.Simple:
         return 'Simple';
+        // ignore: dead_code
         break;
       case Complexity.Challenging:
         return 'Challenging';
+        // ignore: dead_code
         break;
       case Complexity.Hard:
         return 'Hard';
+        // ignore: dead_code
         break;
       default:
         return 'Unknown';
@@ -39,12 +42,15 @@ class MealItem extends StatelessWidget {
     switch (affordability) {
       case Affordability.Affordable:
         return 'Affordable';
+        // ignore: dead_code
         break;
       case Affordability.Pricey:
         return 'Pricey';
+        // ignore: dead_code
         break;
       case Affordability.Luxurious:
         return 'Expensive';
+        // ignore: dead_code
         break;
       default:
         return 'Unknown';
@@ -117,6 +123,7 @@ class MealItem extends StatelessWidget {
                       SizedBox(
                         width: 6,
                       ),
+                      // ignore: unnecessary_brace_in_string_interps
                       Text('${duration} min')
                     ],
                   ),
